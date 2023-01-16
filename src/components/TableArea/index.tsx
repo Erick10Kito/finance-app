@@ -1,4 +1,5 @@
 import { IItem } from "../../types/Item";
+import { TableItem } from "../TableItem";
 
 interface IProps {
   list: IItem[];
@@ -18,12 +19,7 @@ export function TableArea({ list }: IProps) {
         </thead>
         <tbody>
           {list.map((item, index) => (
-            <tr key={index}>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
+            <TableItem key={index} item={item} />
           ))}
         </tbody>
       </table>

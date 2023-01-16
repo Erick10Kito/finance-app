@@ -14,10 +14,11 @@ export default function App() {
   useEffect(() => {
     setFilteredList(filterListByMonth(list, currentMonth));
   }, [list, currentMonth]);
+  console.log(list);
   return (
     <div>
       <div className="bg-indigo-900 h-40 text-center">
-        <h1 className="m-0 p-0 text-white pt-8">Sistema Financeiro</h1>
+        <h1 className="m-0 p-0 text-white pt-8">Teste</h1>
       </div>
       <div className="m-auto mb-12 max-w-[980px]">
         <TableArea list={filteredList} />
